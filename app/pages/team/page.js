@@ -7,7 +7,8 @@ import html from './team.html';
 import { getTeam } from '../../utils/api';
 import { get } from '../../utils/idxdb';
 
-export const open = (teamId) => {
+export const open = (params) => {
+	const teamId = params[0];
 	const main = document.querySelector("main");
 	main.innerHTML = html;
 
