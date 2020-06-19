@@ -21,19 +21,19 @@ class NavigationBar extends HTMLElement {
             <div class="nav-content nav-center">
                 <ul class="tabs tabs-transparent">
                     <li class="tab">
-                        <a href="/#/matches" class="tab-item" id="navMatches">
+                        <a href="./#/matches" class="tab-item" id="navMatches">
                             <i class="material-icons">perm_contact_calendar</i>
                             <span class="hide-on-small-only">MATCH</span>
                         </a>
                     </li>
                     <li class="tab">
-                        <a href="/#/standings" class="tab-item" id="navStandings">
+                        <a href="./#/standings" class="tab-item" id="navStandings">
                             <i class="material-icons">insert_chart</i>
                             <span class="hide-on-small-only">STANDING</span>
                         </a>
                     </li>
                     <li class="tab">
-                        <a href="/#/followed" class="tab-item" id="navFollowed">
+                        <a href="./#/followed" class="tab-item" id="navFollowed">
                             <i class="material-icons">playlist_play</i>
                             <span class="hide-on-small-only">FOLLOWED TEAMS</span>
                         </a>

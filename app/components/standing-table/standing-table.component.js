@@ -30,7 +30,7 @@ class StandingTable extends HTMLElement {
             </tr>
             <tr class="highlighted">
                 <td>${element.position}</td>
-                <td><a href="/#/team/${element.team.id}"><img src="${element.team.crestUrl}" alt="${element.team.name}" class="team-crest" />${element.team.name}</a> <button class="btn-flat tooltipped" data-position="bottom" data-tooltip="Follow ${element.team.name}" data-teamid="${element.team.id}"></button> </td>
+                <td><a href="./#/team/${element.team.id}"><img src="${element.team.crestUrl}" alt="${element.team.name}" class="team-crest" />${element.team.name}</a> <button class="btn-flat tooltipped" data-position="bottom" data-tooltip="Follow ${element.team.name}" data-teamid="${element.team.id}"></button> </td>
                 <td>${element.playedGames}</td>
                 <td>${element.won}</td>
                 <td>${element.draw}</td>

@@ -59,7 +59,7 @@ class TeamCollection extends HTMLElement {
                 <p>Followed team not found 😥</p>
               </div>
               <div class="card-action">
-                <a href="/#/standings">Go to Standings Page</a>
+                <a href="./#/standings">Go to Standings Page</a>
               </div>
             </div>
           </div>`;
