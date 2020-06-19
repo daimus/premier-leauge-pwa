@@ -1,6 +1,6 @@
 "use strict";
 
-// Router state
+const baseUrl = 'https://daimus.github.io/premier-leauge-pwa/';
 let currentPage;
 let currentAction;
 
@@ -54,8 +54,16 @@ const registerRouter = () => {
 
 // Get current page from URL
 export const getCurrentPage = () => {
-	let uriSegment = location.href.split('/');
-	return (uriSegment.length == 4) ? 'matches' : uriSegment[4];
+	let uri = location.href;
+	uri = uri.substring(0, uri.indexOf('?') != -1 ? uri.indexOf('?') : uri.indexOf('?').length).substring(uri.indexOf(baseUrl) + baseUrl.length).split('/');
+	return (uri.length == 1) ? 'matches' : uri[1];
+}
+
+export const getParams = () => {
+	let uri = location.href;
+	uri = uri.substring(0, uri.indexOf('?') != -1 ? uri.indexOf('?') : uri.indexOf('?').length).substring(uri.indexOf(baseUrl) + baseUrl.length).split('/');
+	let params = uri.splice(2);
+	return params;
 }
 
 // Open page
@@ -67,7 +75,7 @@ const openPage = (state) => {
 		.then(() => import(`./pages/${pageName}/page`))
 		.then(newPage => {
 			currentPage = newPage;
-			return currentPage.open(uriSegment[5]);
+			return currentPage.open(getParams());
 		})
 		// Display error page
 		.catch(err => {
@@ -86,7 +94,7 @@ export const navigate = (pageName) => {
 	const uriSegment = pageName.split('/');
 	pageName = uriSegment[0];
 	const state = { page: pageName };
-	window.history.pushState(state, pageName, `/#/${pageName}${(uriSegment[1]) ? '/' + uriSegment[1] : ''}`);
+	window.history.pushState(state, pageName, `${baseUrl}#/${pageName}/${getParams().join('/')}`);
 	openPage(state);
 }
 
