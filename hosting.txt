@@ -1,8 +1,8 @@
 HOSTING INFORMATION
 =====================
 
-FIREBASE HOSTING: 
+FIREBASE HOSTING: https://premier-leauge-pwa.web.app/
 
-GITHUB HOSTING  :
+GITHUB HOSTING  : https://daimus.github.io/premier-leauge-pwa/
 
 PERSONAL HOSTING: https://pl.youre.my.id
