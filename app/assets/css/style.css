@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+body {
+    background-color: #F2F2F2;
+    font-family: 'Alata', sans-serif;
+    /* font-family: 'Secular One', sans-serif; */
+    /* letter-spacing: 1px; */
+}
+
+.color-white {
+    color: #FFFFFF;
+}
+
+.color-primary {
+    color: #286090;
+}
+
+.color-success {
+    color: #449D44;
+}
+
+.color-info {
+    color: #31B0D5;
+}
+
+.color-warning {
+    color: #EC971F;
+}
+
+.color-danger {
+    color: #C9302C;
+}

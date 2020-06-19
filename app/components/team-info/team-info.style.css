@@ -1,0 +1,24 @@
+.team-detail {
+    color: #ffffff;
+}
+
+.team-crestImage {
+    height: 150px;
+}
+
+.team-detail .team-name {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.team-detail .team-name span {
+    font-weight: 600;
+}
+
+.team-detail table {
+    width: unset;
+}
+
+.team-detail td {
+    padding: 0px 10px 0px 0px;
+}

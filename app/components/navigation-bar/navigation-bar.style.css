@@ -1,0 +1,22 @@
+nav {
+    background-color: #2c002f;
+}
+.nav-center,
+.nav-content > ul {
+    justify-content: center;
+    display: flex;
+}
+
+.tab-item {
+    display: inline-flex !important;
+}
+
+.tab-item i,
+.tab-item .material-icons {
+    line-height: unset;
+}
+
+.tab-item span {
+    margin: 0 0 0 10px;
+    font-weight: 600;
+}

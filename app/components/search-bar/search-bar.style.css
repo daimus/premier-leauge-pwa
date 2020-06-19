@@ -1,0 +1,23 @@
+.search-bar {
+    background-color: #2c002f;
+    
+}
+
+.pl-background {
+    background-image: url('../../assets/images/plbg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.search-form {
+    padding: 50px 0px 140px 0px;
+}
+
+.search-form input {
+    color: #ffffff;
+}
+
+.search-form button {
+    color: #ffffff;
+}

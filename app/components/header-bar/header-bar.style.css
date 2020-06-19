@@ -1,0 +1,11 @@
+.header-bar {
+    background-color: #2c002f;
+}
+
+.pl-background {
+    background-image: url('../../assets/images/plbg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    min-height: 200px;
+}

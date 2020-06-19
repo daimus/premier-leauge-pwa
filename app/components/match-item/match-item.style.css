@@ -1,0 +1,38 @@
+.versase {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    padding-top: 10px;
+}
+
+.team-logo img {
+    max-height: 80px;
+    width: auto !important;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.team-name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.match-info {
+    font-weight: 500;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.score {
+    font-size: 32px;
+    font-weight: 600;
+    color: #d39700;
+}
+
+.match-card {
+    min-height: 170px;
+}
+
+.match-card .card-content {
+    padding: 20px 24px 0px 24px;
+}
