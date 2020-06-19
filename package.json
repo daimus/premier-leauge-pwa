@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server -d",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Muhammad Daimus Suudi",
   "license": "ISC",
@@ -18,6 +20,7 @@
     "copy-webpack-plugin": "^6.0.2",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
+    "gh-pages": "^3.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "idb": "^5.0.4",
